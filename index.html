@@ -15,14 +15,14 @@
 </head>
 <body>
 
-    <h1 class="box">
+    <h1 class="box text-center">
         Benvenuto in Treno.it
     </h1>
 
     <hr>
 
     <div class="box d-flex justify-content-between">
-        <div id="tariffe" class="col-6">
+        <div id="tariffe" class="col-4 ps-2">
 
             <h3>
                 Le nostre tariffe
@@ -38,7 +38,29 @@
 
         </div>
 
-        <div id="prezzo" class="col-6">
+        <div id="dati_cliente" class="col-4">
+            <h3>
+                Dati del cliente
+            </h3>
+
+            <span>
+                Il cliente deve percorrere: 
+            </span>
+
+            <span id="chilometri" class="mb-2"></span>
+
+            <br> 
+
+            <span>
+                L'età del cliente è: 
+            </span>
+
+            <span id="eta_passeggero"></span>
+
+            
+        </div>
+
+        <div id="prezzo" class="col-4">
             <h3 class="d-inline">
                 Il prezzo è : 
             </h3>

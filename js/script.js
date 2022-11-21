@@ -43,5 +43,6 @@ if(etaPasseggero < 18){
 prezzo = prezzo.toFixed(2);
 
 
-
+document.getElementById('chilometri').innerHTML = chilometri + " Km";
+document.getElementById('eta_passeggero').innerHTML = etaPasseggero + " Anni";
 document.getElementById('output').innerHTML = prezzo + "\u20ac";
