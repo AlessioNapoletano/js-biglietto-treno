@@ -20,9 +20,9 @@ console.log("il numero di chilometri del tuo viaggio: " + " " + kilometres);
 console.log("l'età del passeggero è: " + " " + agePassenger);
 
 //Casting delle due variabili
-chilometri = parseInt(kilometres);
+kilometres = parseInt(kilometres);
 
-etaPasseggero = parseInt(agePassenger);
+agePassenger = parseInt(agePassenger);
 
 
 let price = kilometres * 0.21;
