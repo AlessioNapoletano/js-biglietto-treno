@@ -11,38 +11,34 @@
 */
 
 //Richiesta dati
-let chilometri = prompt("Inserisci il numero di chilometri: ");
+let kilometres = prompt("Inserisci il numero di chilometri: ");
 
-let etaPasseggero = prompt("Inserisci l'età del passeggero");
+let agePassenger = prompt("Inserisci l'età del passeggero");
 
-console.log("il numero di chilometri del tuo viaggio: " + " " + chilometri);
+console.log("il numero di chilometri del tuo viaggio: " + " " + kilometres);
 
-console.log("l'età del passeggero è: " + " " + etaPasseggero);
+console.log("l'età del passeggero è: " + " " + agePassenger);
 
 //Casting delle due variabili
-chilometri = parseInt(chilometri);
+chilometri = parseInt(kilometres);
 
-etaPasseggero = parseInt(etaPasseggero);
-
-
-let prezzo = chilometri * 0.21;
-
-prezzo = parseFloat(prezzo);
-
-/* Prova di stampa del prezzo
-console.log("il prezzo è: " + " " + prezzo);
-console.log(typeof(prezzo));
-*/
-console.log("il prezzo è: " + " " + prezzo + "\u20ac");
+etaPasseggero = parseInt(agePassenger);
 
 
-if(etaPasseggero < 18){
-    prezzo = prezzo - (prezzo * 0.20);
+let price = kilometres * 0.21;
+
+
+console.log("il prezzo è: " + " " + price + "\u20ac");
+
+
+if(agePassenger < 18){
+    price = price - (price * 0.20);
+}else if(agePassenger >= 65)  {
+    price = price - (price * 0.40);
 }
 
-prezzo = prezzo.toFixed(2);
+const formattedPrice = price.toFixed(2);
 
-
-document.getElementById('chilometri').innerHTML = chilometri + " Km";
-document.getElementById('eta_passeggero').innerHTML = etaPasseggero + " Anni";
-document.getElementById('output').innerHTML = prezzo + "\u20ac";
+document.getElementById('kilometres').innerHTML = kilometres + " Km";
+document.getElementById('age_passenger').innerHTML = agePassenger + " Anni";
+document.getElementById('final_price').innerHTML = formattedPrice + "\u20ac";
